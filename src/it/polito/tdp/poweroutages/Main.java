@@ -19,11 +19,8 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			
 			Model model = new Model();
-			PowerOutagesController controller = loader.getController();
+			PowerOutagesController controller = (PowerOutagesController) loader.getController();
 			controller.setModel(model);
-			
-			primaryStage.setScene(scene);
-			primaryStage.show();
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();
